@@ -25,6 +25,10 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.       *
  ******************************************************************************/
 
+/*
+ * Dependance : https://github.com/felis/USB_Host_Shield
+ */
+
 #include <Max3421e.h>
 #include <Max3421e_constants.h>
 #include <Usb.h>
