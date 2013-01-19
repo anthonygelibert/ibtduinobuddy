@@ -50,7 +50,7 @@ void setup(void)
 {
     Serial.begin(IBUDDY_TX_SPEED);
     Max.powerOn();
-    Serial.println("=== iBuddy Remote controller using BTM on Arduino UNO ===\n");
+    Serial.println("=== iBuddy Remote controller using SparkFun BTM on Arduino UNO ===\n");
     delay(200);
 }
 
@@ -123,7 +123,7 @@ void iBuddyInit(void)
     }
 
     /* Check iBuddy VID. */
-    if((buf[ 8 ] != IBUDDY_VID_LO) || (buf[ 9 ] != IBUDDY_VID_HI))
+    if((buf[8] != IBUDDY_VID_LO) || (buf[9] != IBUDDY_VID_HI))
     {
         Serial.println("Unsupported USB Device");
         Usb.setUsbTaskState(USB_STATE_ERROR);
