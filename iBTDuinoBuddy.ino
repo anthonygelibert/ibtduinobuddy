@@ -26,7 +26,14 @@
  ******************************************************************************/
 
 /*
- * Dependance : https://github.com/felis/USB_Host_Shield
+ * Dependance: https://github.com/felis/USB_Host_Shield
+ * Wiring of BTM -> Arduino:
+ *    - Tx -> Rx
+ *    - Rx -> Tx
+ *    - RTS -> GND
+ *    - VCC -> 3.3V
+ *    - CTS -> GND
+ *    - GND -> GND
  */
 
 #include <Max3421e.h>
